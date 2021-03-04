@@ -14,6 +14,13 @@ export class ExemplosPipesComponent implements OnInit {
     preco: 44.99,
     dataLancamento: new Date(2016, 5, 23),
     url: 'http://a.co/glqjpRP'
+  };
+
+  livros: string[] = ['Java', 'Angular 2'];
+  filtro: string;
+
+  addCurso(valor) {
+    this.livros.push(valor);
   }
 
   constructor() { }

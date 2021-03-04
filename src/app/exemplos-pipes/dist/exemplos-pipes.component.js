@@ -18,7 +18,11 @@ var ExemplosPipesComponent = /** @class */ (function () {
             dataLancamento: new Date(2016, 5, 23),
             url: 'http://a.co/glqjpRP'
         };
+        this.livros = ['Java', 'Angular 2'];
     }
+    ExemplosPipesComponent.prototype.addCurso = function (valor) {
+        this.livros.push(valor);
+    };
     ExemplosPipesComponent.prototype.ngOnInit = function () {
     };
     ExemplosPipesComponent = __decorate([
